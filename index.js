@@ -37,7 +37,7 @@ function Emitter (opts) {
   this.client.identity = this.key;
   this.client.connect(format('tcp://%s:%s', opts.host, opts.port));
   
-  this._rooms = {};
+  this._rooms = [];
   this._flags = {};
 }
 
